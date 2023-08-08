@@ -29,7 +29,7 @@ class CreateCocktailFragment : Fragment() {
     private var _binding: FragmentCreateCocktailBinding? = null
     private val binding get() = _binding
     private val viewModel: MainViewModel by viewModels()
-//    val cocktailDao: CocktailDao = (activity?.application as App).db.cocktailDao()
+    val cocktailDao: CocktailDao = (activity?.application as App).db.cocktailDao()
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
